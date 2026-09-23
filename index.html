@@ -1,0 +1,398 @@
+<Doctype hrml>
+<html lang="es-Mx">
+<head><!--aqui vienen los meta datos y la conexion al style.css-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="autor" content="Issa Figueroa">
+<meta name="description"  content="es un carrito de compras de Refacciones para Maquinaria pesada">
+<meta name="keywords" content="Refacciones maquinaria pesada, Refacciones para maquinas, Excabadoras">
+<!--es el titulo de la pagina-->
+<title>Carrito de Compras Refacciones para maquinaria pesada</title>
+<!--enlaza con la oja de estilos-->
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+    </head>
+
+<body class="paper-texture">
+<header class="site-header">
+    <div class="container header-inner">
+
+     <a href="#inicio" class="logo">
+  <img src="img/tractofam.jpeg" alt="Tractofam" class="logo-icon">
+  TRACTOREF
+</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Refacciones nuevas</a></li>
+          <li><a href="#beneficios">Referencias</a></li>
+          <li><a href="#oferta">Descuento</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Tractoref.')">
+          <i data-lucide="message-circle"></i> Pedir ahora
+        </button>
+      
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    </div>
+    <nav id="mobile-menu" class="mobile-nav">
+    <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Refaciones nuevas</a></li>
+          <li><a href="#beneficios">Refacciones usadas</a></li>
+          <li><a href="#oferta">Lo mas buscado</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido.')">
+        <i data-lucide="message-circle"></i> Pedir ahora
+      </button>
+    </nav>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Refacciones para maquinaria pesada</p>
+          <h1>Encuentra la refaccion que necesitas</h1>
+          <p class="lead">Piezas originales y de alta calidad para tu maquinaria, con atencion rapida y envios a donde la necesites.</p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn primary">Ver productos</a>
+            <button type="button" class="btn outline" onclick="openWhatsApp('Hola quiero cotizar una refaccion.')">Comprar por WhatsApp</button>
+          </div>
+          <p class="trust"><i data-lucide="heart"></i> Más de 200 refacciones entregadas</p>
+        </div>
+        <div class="hero-image reveal">
+          <img src="img/maquinas.webp" alt="Contamos con diferentes refacciones, en caso de no ver lo que necesitas, cotizarlo al wpp.">
+          <span class="tag tag-love">Refacciones para maquinaria pesada</span>
+          <span class="tag tag-custom">Pedidos personalizados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTOS ================= -->
+    <section id="productos" class="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Encuentra las refacciones que necesitas</p>
+          <h2>Conoce nuestros productos</h2>
+          <p class="lead">soluciones de calidad para el mantenimiento de tu maquinaria</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="img/computadoranegra.jpeg" alt="ECM MOTOR">
+            <div class="product-body">
+              <span class="tag">ECM MOTOR</span>
+              <h3>No de parte: 348-2379</h3>
+              <p class="price">$16,872.77 MXN</p>
+              <p class="description">Modelos de monitor compatibles:
+Comúnmente utilizado en motores C10, C12, 3126B, 3176C, 3196 y 3406E</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/bomba.jpeg" alt="Bomba de inyección Case/new holland">
+            <div class="product-body">
+              <span class="tag">Bomba de inyección Case/new holland</span>
+              <h3>No de parte: 0460424424</h3>
+              <p class="price">$17,900 MXN</p>
+              <p class="description">Se utiliza principalmente en retroexcavadoras y cargadores de la marca case (modelos 580SR,  570T)
+y New Holland (modelos B90, B95).</p>
+              <button type="button" class="btn card" onclick="openModal('modal-vela')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/monitor.jpeg" alt="Monitor para serie D.">
+            <div class="product-body">
+              <span class="tag">Monitor para serie D.</span>
+              <h3>No. De parte: 386-3457</h3>
+              <p class="price">$51,687.30MXN</p>
+              <p class="description">Número de pies alternativo: 260-2193, 279-7611 o 327-7482
+Excavadoras: 312D, 313D, 319D, 320D, 323D, 324D, 330D, 336D, 345C, 365C, 385C, y 390D.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-taza')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/computadoraamarilla.jpeg" alt="ECM Hidráulico Serie C.">
+            <div class="product-body">
+              <span class="tag">ECM Hidráulico Serie C.</span>
+              <h3>No. De parte: 157-3165</h3>
+              <p class="price">$61,625 MXN</p>
+              <p class="description">Modelo de excavadoras: 312C, 315C, 318C, 319C, 320C, 321C, 322C, 325C, 330C.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-jardin')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/inyectorsolo.jpeg" alt="Inyector para motor C4.4, C6.6, C7.1">
+            <div class="product-body">
+              <span class="tag">Inyector para motor C4.4, C6.6, C7.1</span>
+              <h3>No. de parte: 370-7280</h3>
+              <p class="price">$18,100 MXN</p>
+              <p class="description">Retroexcabadora: 416F. Excabadoras modelos: 320, 323F, 324E. 325F, LCR, 329E, 330F.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-kit')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/valvulas.jpeg" alt="Valvula solenoide PRV">
+            <div class="product-body">
+              <span class="tag">Valvula solenoide PRV</span>
+              <h3>No. de parte: 111-9916</h3>
+              <p class="price">$8,510 MXN</p>
+              <p class="description">Excabadoras: 320B. 320C, 320D, 312B, 312D, 325B, 330C.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-tarjeta')">Ver producto</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BENEFICIOS ================= -->
+    <section id="beneficios" class="benefits">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>¿Por qué comprarnos?</h2>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="sparkles"></i></div>
+            <h3>Calidad garantizada</h3>
+            <p>Refacciones originales y certificadas.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="message-circle-heart"></i></div>
+            <h3>Atención rápida</h3>
+            <p>Te asesoramos para encontrar la pieza exacta.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="truck"></i></div>
+            <h3>Envíos</h3>
+            <p>Llevamos tus refacciones a donde los necesites.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="mouse-pointer-click"></i></div>
+            <h3>Compra fácil</h3>
+            <p>Cotiza, confirma y listo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ================= OFERTA ================= -->
+    <section id="oferta" class="offer">
+      <div class="container">
+        <div class="offer-panel reveal">
+          <span class="tag tag-light">Oferta de bienvenida</span>
+          <h2>10% de descuento en tu primer pedido</h2>
+          <p>Empieza con tu primer pedido y llevate un descuento en tus refacciones.</p>
+          <button id="offer-button" type="button" class="btn butter" onclick="revealOffer()">Quiero mi descuento</button>
+          <div id="offer-reveal" class="offer-reveal hidden" aria-live="polite">
+            <p class="offer-reveal-title">¡Listo! Tu código de bienvenida es:</p>
+            <div class="offer-code-row">
+              <span class="offer-code">TRACTOFAM10</span>
+              <button id="copy-code" type="button" class="btn outline" onclick="copyDiscount()">Copiar código</button>
+              <button type="button" class="btn whatsapp" onclick="openWhatsApp('Hola, quiero usar mi código TRACTOFAM10 en mi primer pedido.')">Pedir por WhatsApp</button>
+            </div>
+            <p id="copy-feedback" class="copy-feedback hidden" role="status">Código copiado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIOS ================= -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Opiniones reales</p>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testimonial-viewport">
+          <div id="testimonial-track" class="testimonial-track">
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="https://tse1.mm.bing.net/th/id/OIP.SQGH5LCt10dDbl_LTH0PVQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Retrato genérico de una mujer sonriente.">
+                  <div>
+                    <p class="name">Diana Morales.</p>
+                    <p class="occasion">Cliente frecuente</p>
+                  </div>
+                </div>
+                <p class="quote">"Encontre las refacciones que necesitaba a buen precio y llegaron muy rapido y en buenas condiciones."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="https://tse1.mm.bing.net/th/id/OIP.OeLrQ_EDldcR40o9gp50RwHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Retrato genérico de un hombre sonriente.">
+                  <div>
+                    <p class="name">Diego M.</p>
+                    <p class="occasion">Dueño de taller mecanico</p>
+                  </div>
+                </div>
+                <p class="quote">"Tienen las piezas que en otro lado nunca encuentro, muy buen precio."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="https://tse4.mm.bing.net/th/id/OIP.exFc3NMMo_ooOBWacIF8XQAAAA?r=0&w=400&h=600&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Retrato genérico de una mujer joven sonriente.">
+                  <div>
+                    <p class="name">Laura P.</p>
+                    <p class="occasion">Operadora de maquinaria pesada</p>
+                  </div>
+                </div>
+                <p class="quote">"Me asesoraron bien y la pieza llego justo como la necesitaba."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="testimonial-prev" type="button" aria-label="Testimonio anterior"><i data-lucide="arrow-left"></i></button>
+          <div id="testimonial-dots" class="dots" aria-label="Seleccionar testimonio">
+            <button class="active" aria-label="Ver testimonio 1" aria-current="true"></button>
+            <button aria-label="Ver testimonio 2" aria-current="false"></button>
+            <button aria-label="Ver testimonio 3" aria-current="false"></button>
+          </div>
+          <button id="testimonial-next" type="button" aria-label="Siguiente testimonio"><i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+ <!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="contact">
+      <div class="container contact-panel reveal">
+        <div class="contact-text">
+          <p class="eyebrow">Estamos cerca</p>
+          <h2>Hablemos de lo que necesitas</h2>
+          <p class="lead">Cuentanos que refacciones buscas y te ayudamos a encontrarla.</p>
+          <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero platicar sobre un detalle personalizado.')">Escribir por WhatsApp</button>
+        </div>
+        <aside class="contact-info" aria-label="Datos de contacto">
+          <ul>
+            <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/i.figueroaa?stkn=bjE3bjRkMmp6a2Zp" target="_blank" rel="noopener noreferrer">@tractoref</a></li>
+            <li><i data-lucide="facebook"></i> <a href="https://www.facebook.com/share/1CWPBVaK89/" target="_blank" rel="noopener noreferrer">Tractoref</a></li>
+            <li><i data-lucide="mail"></i> <a href="mailto:tractofam_01@hotmail.com">tractofam_01@hotmail.com</a></li>
+            <li><i data-lucide="clock-3"></i> Lunes a viernes, 8:00 a 18:30, Sabados 8:00 a 15:30.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+</main>
+<!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="brand">TRACTOFAM</p>
+      <p class="love">REFACCIONES ORIGINALES</p>
+      <nav class="footer-links">
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <button id="whatsapp-float" type="button" class="whatsapp-float" aria-label="Escribir por WhatsApp" onclick="openWhatsApp('Hola, quiero conocer los detalles personalizados de Dulce Detalle.')">
+    <i data-lucide="message-circle"></i>
+  </button>
+  <!-- ================= MODALES DE PRODUCTO ================= -->
+  <div id="modal-caja" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-caja-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/computadoranegra.jpeg" alt="Caja de regalo rosa con chocolates y listón.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-caja')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-caja-title">ECM MOTOR</h2>
+        <p class="price">$16,872.77 MXN</p>
+        <p>Modelos de monitor compatibles: Comúnmente utilizado en motores C10, C12, 3126B, 3176C, 3196 y 3406E.</p>
+        <h3>No de parte:348-2379 </h3>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir la Caja Abrazo. ¿Me ayudan a personalizarla?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-vela" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-vela-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/bomba.jpeg" alt="Bomba de inyección Case/new holland">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-vela')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-vela-title">Vela Momento</h2>
+        <p class="price">$17,900 MXN</p>
+        <p>Se utiliza principalmente en retroexcavadoras y cargadores de la marca case (modelos 580SR, 570T) y New Holland (modelos B90, B95)..</p>
+        <h3>No de parte: 0460424424</h3>
+        
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir la Vela Momento. ¿Qué aromas tienen disponibles?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-taza" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-taza-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/monitor.jpeg" alt="Monitor para serie D.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-taza')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-taza-title">No. De parte: 386-3457</h2>
+        <p class="price">$51,687.30 MXN</p>
+        <p>Número de pies alternativo: 260-2193, 279-7611 o 327-7482 Excavadoras: 312D, 313D, 319D, 320D, 323D, 324D, 330D, 336D, 345C, 365C, 385C, y 390D..</p>
+        
+        
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir una Taza Personalizada. Tengo una frase en mente.')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-jardin" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-jardin-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/computadoraamarilla.jpeg" alt="ECM Hidráulico Serie C..">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-jardin')"><i data-lucide="x"></i></button>
+      </div>/photos/2337804/pexels-photo-2337804.jpeg?auto=compre
+      <div class="modal-body">
+        <h2 id="modal-jardin-title">No. De parte: 157-3165</h2>
+        <p class="price">$61,625 MXN</p>
+        <p>Modelo de excavadoras: 312C, 315C, 318C, 319C, 320C, 321C, 322C, 325C, 330C..</p>
+        
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un Mini Jardín. ¿Qué opciones de maceta tienen?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-kit" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-kit-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/inyectorsolo.jpeg" alt="Inyector para motor C4.4, C6.6, C7.1.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-kit')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-kit-title">No. de parte: 370-7280</h2>
+        <p class="price">$18,100 MXN</p>
+        <p>Retroexcabadora: 416F. Excabadoras modelos: 320, 323F, 324E. 325F, LCR, 329E, 330F..</p>
+       
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un Kit Cumpleaños. ¿Me comparten opciones?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-tarjeta" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-tarjeta-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/valvulas.jpeg" alt="Valvula solenoide PRV">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-tarjeta')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-tarjeta-title">111-9916</h2>
+        <p class="price">$8,510 MXN</p>
+        <p>No. de parte: Excabadoras: 320B. 320C, 320D, 312B, 312D, 325B, 330C.</p>
+       
+       
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir una Tarjeta con Flores. ¿Puedo incluir un mensaje?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
